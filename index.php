@@ -161,7 +161,7 @@
 <footer>
  	<div>
  		<address>
- 			encoded by:Jubair Ahmed Junjun.<br>
+ 			encoded by:ALKAIF KHAN.<br>
  			copyright &copy;2020-2021 CGPA Calculator.All reserved.
  		</address>
  	</div>
