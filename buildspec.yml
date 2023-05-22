@@ -8,8 +8,11 @@ phases:
       # Add any other build commands specific to your PHP app, such as generating assets or compiling templates
   post_build:
     commands:
-      - echo "Packaging artifacts"
-      - zip -r my-app.zip .
+      - echo "Copying files to deployment directory"
+      - mv * /var/www/html/
+
 artifacts:
   files:
-    - my-app.zip
+    - '**/*'
+    - '.env'
+
