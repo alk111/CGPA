@@ -1,0 +1,22 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      php: 7.4
+  pre_build:
+    commands:
+      - echo "Installing composer dependencies, if any"
+      - composer install --no-dev --no-progress --quiet
+  build:
+    commands:
+      - echo "Building the PHP application"
+      - php -v
+      # Add any other build commands specific to your PHP app, such as generating assets or compiling templates
+  post_build:
+    commands:
+      - echo "Packaging artifacts"
+      - zip -r my-app.zip .
+artifacts:
+  files:
+    - my-app.zip
