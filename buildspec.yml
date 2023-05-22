@@ -1,13 +1,6 @@
 version: 0.2
 
 phases:
-  install:
-    runtime-versions:
-      php: 8.1
-  pre_build:
-    commands:
-      - echo "Installing composer dependencies, if any"
-      - composer install --no-dev --no-progress --quiet
   build:
     commands:
       - echo "Building the PHP application"
