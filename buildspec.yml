@@ -10,4 +10,8 @@ phases:
     commands:
       - echo "Copying files to deployment directory"
       - mv * /var/www/html/
+artifacts:
+  files:
+    - '**/*'
+
 
